@@ -1,5 +1,6 @@
 '''
-Python script to send files over the network to the specified IP address. Alive_progress package can be installed or the lines 8, 24 and 33 can be commented
+Python script to send files over the network to the specified IP address. Shows the progress of the transfer of files. 
+Alive_progress package can be installed or the lines 8, 24 and 33 can be commented
 Created by Ravi
 Date - 10/11/2022
 '''

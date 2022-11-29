@@ -7,9 +7,8 @@ while True:
         from alive_progress import alive_bar
         break
     except ImportError as e:
-        print(f"\n {mod} not found. Installing {mod}")
-        os.system(f"pip -m install {mod}")
-        #subprocess.check_call([sys.executable, "-m", "pip", "install", mod])
+        print(f"\n {mod} not found. Installing {mod}"
+        subprocess.check_call([sys.executable, "-m", "pip", "install", mod])
         print(f"{mod} module installed")
 
 s = socket.socket()

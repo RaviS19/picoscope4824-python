@@ -29,7 +29,7 @@ while True:
     client, address = s.accept()
     print(f'{address} connected')
     os.system('cls')
-    # client socket and makefile wrapper will be closed when with exits.
+    # client socket and makefile wrapper will be closed when 'with' exits.
     with client, client.makefile('rb') as clientfile:
         while True:
             folder = clientfile.readline()
@@ -63,8 +63,6 @@ while True:
                         filesize = int(clientfile.readline())
                         data = clientfile.read(filesize)
                         if not os.path.exists(os.path.join(folderpath, filename)):
-                            #os.system('cls')
-                            #print(f'Receiving file: {filename} ({filesize} bytes)')
                             with open(os.path.join(folderpath, filename), 'wb') as f:
                                 f.write(data)
                         bar()

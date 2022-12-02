@@ -65,7 +65,7 @@ s = glob.glob1(folders[1],"PicoData_pos1_*.txt");
 n = len(folders)
 lenS = 0
 
-#Reads folders adn sub-folders and saves the figs and peaks data in 
+#Reads folders and sub-folders and saves the figs and peaks data in 
 for fold in folders:
     i=1;
     pks = [];

@@ -1,5 +1,5 @@
-'''#=
-Program to read the data from the picoscope, plots and saves the peaks as peaks.txt into individual folders
+'''
+Program to read the data from the picoscope, plot and save the peaks as peaks.txt into separate folders
 '''
 import matplotlib.pyplot as plt
 import numpy as np
